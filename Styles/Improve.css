@@ -1,0 +1,519 @@
+.improve {
+  position: absolute;
+  left: 15vw;
+  min-width: 83%;
+  max-width: 83%;
+  height: 95vh;
+  top: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.improvementContentLeft {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.improvementContentLeft .playerTab {
+  height: 20%;
+}
+
+.improvementContentLeft .writtenImprovementTips {
+  overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 75%;
+  width: 100%;
+}
+
+.improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper {
+  height: 50%;
+  background: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementBox {
+  background: #ecebeb;
+  border-radius: 5px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 90%;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementHeading, .improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementDescription, .improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementDataReference {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementHeading {
+  height: 20%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 5%;
+  border-bottom: solid white 3px;
+}
+
+.improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementDescription {
+  height: 60%;
+  padding-left: 5%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementDescription p {
+  max-width: 90%;
+  max-height: 80%;
+  font-weight: 400;
+  overflow-y: auto;
+}
+
+.improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementDescription p::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementDescription p::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+
+.improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementDescription p::-webkit-scrollbar:horizontal {
+  height: 11px;
+}
+
+.improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementDescription p::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white;
+  /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementDataReference {
+  height: 20%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: solid white 3px;
+}
+
+.improvementContentRight {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.improvementContentRight .pointToResources {
+  height: 27%;
+  width: 100%;
+  background: lightgreen;
+  border-radius: 5px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.improvementContentRight .pointToResources .pointToResourceDescription {
+  height: 70%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.improvementContentRight .pointToResources .pointToResourceDescription .resourceParagraph {
+  font-weight: 400;
+  max-width: 90%;
+}
+
+.improvementContentRight .pointToResources .pointToResourceArrow {
+  height: 15%;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resourceVideosAndArticlesWrapper {
+  height: 69%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+}
+
+.resourceVideosAndArticlesWrapper::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.resourceVideosAndArticlesWrapper::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+
+.resourceVideosAndArticlesWrapper::-webkit-scrollbar:horizontal {
+  height: 11px;
+}
+
+.resourceVideosAndArticlesWrapper::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white;
+  /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.resourceVideoWrapper {
+  min-height: 30vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+}
+
+.resourceVideo {
+  background: #ecebeb;
+  height: 27vh;
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px 5px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.resourceVideo .resourceVideoContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80%;
+  width: 80%;
+}
+
+.resourceVideo .resourceVideoContent .videoThumbnail {
+  height: 60%;
+  width: 100%;
+  background: url("https://i.ytimg.com/an_webp/X2OZu5mFz-s/mqdefault_6s.webp?du=3000&sqp=CK_w0Y4G&rs=AOn4CLAoMQBPY2KtkqL5PGqcVmuDw4S3cg");
+  background-position: center;
+}
+
+.resourceVideo .resourceVideoContent .videoTitleAndDescription {
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: white;
+  overflow: hidden;
+}
+
+.resourceVideo .resourceVideoContent .videoTitleAndDescription .videoTitle {
+  max-height: 50%;
+  font-weight: 600;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 95%;
+}
+
+.resourceVideo .resourceVideoContent .videoTitleAndDescription .videoTitle span {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.resourceVideo .resourceVideoContent .videoTitleAndDescription .videoDescription {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-weight: 400;
+}
+
+.resourceVideo .resourceVideoContent .videoTitleAndDescription .videoDescription span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.resourceArticleWrapper {
+  min-height: 30vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+}
+
+.resourceArticle {
+  height: 27vh;
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
+  border-radius: 5px 5px;
+}
+
+.resourceArticle .articleImage {
+  height: 100%;
+  width: 50%;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.resourceArticle .articleTitleAndDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 50%;
+  background: #fcfcfc;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.resourceArticle .articleTitleAndDescription .articleTitle, .resourceArticle .articleTitleAndDescription .articleDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  padding-left: 5%;
+}
+
+.resourceArticle .articleTitleAndDescription .articleTitle {
+  height: 20%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 87%;
+  font-size: 0.8em;
+}
+
+.resourceArticle .articleTitleAndDescription .articleTitle h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.resourceArticle .articleTitleAndDescription .articleDescription {
+  height: 80%;
+  width: 87%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.resourceArticle .articleTitleAndDescription .articleDescription p {
+  max-width: 93%;
+  max-height: 70%;
+  overflow-y: scroll;
+}
+
+.resourceArticle .articleTitleAndDescription .articleDescription p::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.resourceArticle .articleTitleAndDescription .articleDescription p::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+
+.resourceArticle .articleTitleAndDescription .articleDescription p::-webkit-scrollbar:horizontal {
+  height: 11px;
+}
+
+.resourceArticle .articleTitleAndDescription .articleDescription p::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white;
+  /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.improvementResources {
+  width: 12%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.improvementResources .resourceCircleWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85%;
+  width: 100%;
+}
+
+.improvementResources .resourceCircle {
+  width: 8vw;
+  height: 12vh;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.improvementResources .resourceCircle6 {
+  width: 8vw;
+  height: 12vh;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-position: left !important;
+  background-size: cover !important;
+}
+/*# sourceMappingURL=Improve.css.map */

@@ -1,0 +1,350 @@
+.Analyze {
+    position: absolute;
+    left: 15vw;
+    min-width: 84%;
+    max-width: 84%;
+    height: 95vh;
+    overflow: scroll;
+    top: 2vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.verticalDivOne, .verticalDivTwo {
+    height: 130vh;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.previousRoundsChartWrapper {
+    width: 100%;
+    height: 45%;
+    background: rgb(236, 235, 235);
+    border-radius: 2% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: solid rgb(236, 235, 235) 2px;
+
+    box-shadow: 0 2px 4px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);    
+    .previousRoundsHeading {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4em;
+    }
+    .previousRoundsChart {
+        background: white;
+        height: 80%;
+        width: 80%;
+        border-radius: 2% 2%;
+    }
+}
+
+.driveDispersionChart {
+    min-height: 17%;
+    width: 100%;
+    display: flex;
+    flex-direction: columm !important;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(236, 235, 235);
+    border-radius: 5px 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);    
+    .driveDispersionHeadings {
+        height: 15%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h3 {
+            width: 33%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1em;
+        }
+    }
+    .dispersionPercentages {
+        height: 17%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);    
+        .driveDirectionHeading {
+            width: 33%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .leftDrivePercentage {
+            background: rgb(250, 106, 106);
+        }
+        .straightDrivePercentage {
+            background: lightgreen;
+        }
+        .rightDrivePercentage {
+            background: rgb(250, 106, 106);
+        }   
+    }
+    .SVGHolder {
+        height: 80%;
+        width: 100%;
+        background: url('../SVGs/DirectionalArrows.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 150% 90%;
+    }
+}
+
+.puttPercentage {
+    width: 100%;
+    height: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);    
+    overflow: hidden;
+    background:rgb(236, 235, 235);
+    .puttPercentageHeadings {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 33%;
+        }
+    }
+    .numberOfPuttsWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 67%;
+        .onePuttPercentage, .twoPuttPercentage, .threePuttPercentage {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .onePuttPercentage {
+            background: lightgreen;
+        }
+        .twoPuttPercentage {
+            background: lightblue;
+        }
+        .threePlusPuttPercentage {
+            background: rgb(250, 106, 106);
+        }
+    }
+}
+
+.averagePlayerScore {
+    border: solid rgb(236, 235, 235) 2px;
+    background:rgb(236, 235, 235);
+    height: 19vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    .averagePlayerScoreHeading {
+        height: 12%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.75em;
+        font-weight: 500;
+    }
+    .averagePlayerScoreWrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60%;
+        width: 100%;
+        .averageScore, .averageScoreToPar {
+            border-radius: 5px 5px;
+            width: 25%;
+            height: 100%;
+            background: lightblue;
+            background-size: 10%;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .averagePlayerScoreNumber {
+                font-weight: 600;
+                font-size: 1.4em;
+            }
+        }
+    }
+}
+
+.averageHoleParScore {
+    height: 22%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: lightgreen;
+    border: solid lightgreen 1px;
+    border-radius: 5px 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    .averageHoleParScoreHeading {
+        width: 100%;
+        height: 12%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.75em;
+        font-weight: 500;
+    }
+    .parsWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 60%;
+        .parThree, .parFour, .parFive {
+            width: 33%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .parThree, .parFour {
+            border-right: solid black 2px;
+       }
+    }
+}
+
+.GIRFHPercentage {
+    height: 22%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .GIRPercentageWrapper {
+        width: 32%;
+        height: 80%;
+    }
+    .GIRPPercentage {
+        width: 100%;
+        height: 100%;
+        border: solid black 1px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .FHPercentage {
+        width: 32%;
+        height: 80%;
+        border: solid black 1px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.strokesGainedBoxWrapper {
+    height: 14%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    .strokesGainedBox {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+        grid-column-gap: 1%;
+        grid-row-gap: 2%;
+        div {
+            height: 100%;
+            width: 100%;
+            background: purple;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
+
+.chipsAndPuttsAverage {
+    height: 14%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background:rgb(236, 235, 235);
+    border-radius: 5px 5px;
+    .chipsAndPuttsAverageHeading {
+        height: 12%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.4em;
+        font-weight: 500;
+    }
+    .chipsAndPuttsAverageWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 65%;
+        .chipsAverage, .puttsAverage {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            height: 100%;
+            width: 33%;
+            background: lightblue;
+            border-radius: 5px 5px;
+        }
+    }
+}
+
