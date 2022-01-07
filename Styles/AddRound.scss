@@ -65,6 +65,11 @@
   width: 70%;
   button {
     width: 48%;
+    transition: transform 0.3s;
+  }
+  button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
   }
 }
 
@@ -111,6 +116,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      .daHoleNumber {
+        padding-left: 4%;
+        padding-right: 4%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: solid black 2px;
+      }
     }
   }
 }

@@ -42,51 +42,58 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(144, 238, 144, 0.75);
   color: white;
+}
+
+.bigWrapper .dashboardHeading .headings {
+  width: 93%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bigWrapper .dashboardHeading h1 {
+  text-align: center;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.4), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .bigWrapper .dashboardMainContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 75%;
   width: 100%;
 }
 
-.bigWrapper .dashboardMainContent .dashboardBox {
-  height: 60%;
-  width: 50%;
-  background: rgba(0, 0, 0, 0.6);
+.bigWrapper .dashboardMainContent .dashboardBoxOne {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 5px 5px;
+  text-align: center;
 }
 
-.bigWrapper .dashboardMainContent .dashboardBox .dashboardBoxTop {
+.bigWrapper .dashboardMainContent .dashboardBoxOne .dashboardBoxTop {
   height: 75%;
-  width: 50%;
+  width: 84%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,51 +104,112 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  font-size: 1.8em;
+  font-size: 1.2em;
   font-weight: 600;
   text-align: center;
 }
 
-.bigWrapper .dashboardMainContent .dashboardBox .dashboardBoxBottom {
-  height: 25%;
-  width: 70%;
+.bigWrapper .dashboardMainContent .dashboardBoxTwo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.bigWrapper .dashboardMainContent .dashboardBox .dashboardBoxBottom button {
-  width: 40%;
-  height: 70%;
-  border: none;
-  background: lightgreen;
-  border-radius: 5px 5px;
-  text-transform: uppercase;
-}
-
-.playerTab {
-  position: relative;
-  height: 20%;
-  width: 100%;
-  background: #ffed56;
-  background: linear-gradient(125deg, #ffed56 35%, #f2dc24 100%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
+.bigWrapper .dashboardMainContent .dashboardBoxTwo .userImage {
+  height: 40%;
+  width: 50%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bigWrapper .dashboardMainContent .dashboardBoxTwo .userImage img {
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.bigWrapper .dashboardMainContent .dashboardBoxTwo .usernamePassword {
+  width: 60%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bigWrapper .dashboardMainContent .dashboardBoxTwo .usernamePassword input {
+  width: 90%;
+  height: 36%;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  text-align: center;
+}
+
+.bigWrapper .dashboardMainContent .dashboardBoxTwo .loginOrSignUp {
+  width: 60%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.bigWrapper .dashboardMainContent .dashboardBoxTwo .loginOrSignUp button {
+  width: 45%;
+  height: 69%;
+  background: lightgreen;
+  border: none;
+  font-weight: 700;
   border-radius: 5px 5px;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.bigWrapper .dashboardMainContent .dashboardBoxTwo .loginOrSignUp button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.bigWrapper .dashboardMainContent .dashboardBox {
+  height: 60%;
+  width: 39%;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px 5px;
 }
 /*# sourceMappingURL=Dashboard.css.map */

@@ -99,6 +99,7 @@
           justify-content: flex-start;
   padding-left: 5%;
   border-bottom: solid white 3px;
+  background: lightblue;
 }
 
 .improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementDescription {
@@ -142,6 +143,38 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-top: solid white 3px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementDataReference:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 
 .improvementContentRight {
@@ -211,6 +244,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .resourceVideosAndArticlesWrapper {
@@ -224,6 +263,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .resourceVideosAndArticlesWrapper::-webkit-scrollbar {
@@ -351,6 +391,19 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.resourceVideoContent:hover, .resourceArticle:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.resourceVideoContent:hover, .resourceArticle {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .resourceArticleWrapper {
@@ -515,5 +568,18 @@
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background-position: left !important;
   background-size: cover !important;
+}
+
+.improvementResources .resourceCircle, .improvementResources .resourceCircle6 {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.improvementResources .resourceCircle:hover, .improvementResources .resourceCircle6:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
 }
 /*# sourceMappingURL=Improve.css.map */
