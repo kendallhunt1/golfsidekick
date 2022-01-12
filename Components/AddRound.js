@@ -396,7 +396,13 @@ const AddRound = ({setDaHoleNumber, daHoleNumber, setHole1Par, setHole1Score, se
     return (
         <div className="holeInformation">
             <div className="verticalWrapper">
-            <PlayerTab />
+            <div className="playerTabAddRound" style={{background: "rgb(255,237,86)", background: "linear-gradient(125deg, rgba(255,237,86,1) 35%, rgba(242,220,36,1) 100%)"}}>
+            <h1>Happy Gilmore</h1>
+            <div className="handicapDisplay">
+                <div style={{fontSize: "2rem"}}>0.2</div>
+                <div style={{fontWeight: "800"}}>HDCP</div>
+            </div>
+        </div>
             <div className="enterHoleInformationWrapper">
                 <div className="enterHoleInformationFields">
 

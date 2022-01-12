@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import PlayerTab from './PlayerTab';
 import Chart from 'chart.js/auto';
+import DirectionalArrows from '../SVGs/DirectionalArrows.svg';
 import '../Styles/Analyze.css';
 
 const Analyze = ({hole1Par, roundData, hole1, playerScores, fairwaysHit, gIRS, roughShots, chips, putts, holePars, par3ScoreArray, par4ScoreArray, par5ScoreArray}) => {
@@ -170,7 +171,7 @@ const Analyze = ({hole1Par, roundData, hole1, playerScores, fairwaysHit, gIRS, r
                         <h3 className="driveDirectionHeading straightDrivePercentage">36.4%</h3>
                         <h3 className="driveDirectionHeading rightDrivePercentage">46.9%</h3>
                     </div>
-                    <div className="SVGHolder"></div>
+                    <div className="SVGHolder"><img src={DirectionalArrows} alt="Drive Directions"/></div>
                 </div>
                 <div className="puttPercentage">
                     <div className="puttPercentageHeadings">
@@ -225,7 +226,7 @@ const Analyze = ({hole1Par, roundData, hole1, playerScores, fairwaysHit, gIRS, r
                     </div>
                 </div>
                 <div className="GIRFHPercentage">
-                    <div className="GIRPPercentage">
+                    <div className="GIRPercentage">
                         {/* <h3>{fHAverage}</h3> */}
                         <div style={{fontSize: "1.6rem"}}>68.9%<br />FH</div>
                     </div>

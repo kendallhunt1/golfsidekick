@@ -54,4 +54,27 @@
           transform: scale(1.1);
   cursor: pointer;
 }
+
+@media only screen and (max-device-width: 1024px) and (orientation: portrait) {
+  .navigationWrapper {
+    min-width: 20%;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .navigationWrapper {
+    height: 10vh;
+    width: 95vw;
+    top: 1vh;
+  }
+  .navigationWrapper .navigation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .navigationWrapper .navigation img {
+    width: 8vh;
+  }
+}
 /*# sourceMappingURL=Navigation.css.map */

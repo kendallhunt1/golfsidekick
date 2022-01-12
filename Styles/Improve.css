@@ -2,7 +2,6 @@
   position: absolute;
   left: 15vw;
   min-width: 83%;
-  max-width: 83%;
   height: 95vh;
   top: 2vh;
   display: -webkit-box;
@@ -14,6 +13,27 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.improve .playerTabImprove {
+  position: relative;
+  width: 100%;
+  height: 8.5em;
+  background: #ffed56;
+  background: linear-gradient(125deg, #ffed56 35%, #f2dc24 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  overflow: hidden;
+  border-radius: 5px 5px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .improvementContentLeft {
@@ -48,7 +68,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 75%;
-  width: 100%;
+  width: 98%;
 }
 
 .improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper {
@@ -76,14 +96,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 99%;
   height: 90%;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementHeading, .improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementDescription, .improvementContentLeft .writtenImprovementTips .writtenImprovementBoxWrapper .writtenImprovementDataReference {
-  width: 100%;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -551,8 +571,8 @@
 }
 
 .improvementResources .resourceCircle {
-  width: 8vw;
-  height: 12vh;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -561,8 +581,8 @@
 }
 
 .improvementResources .resourceCircle6 {
-  width: 8vw;
-  height: 12vh;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -581,5 +601,55 @@
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .improve {
+    left: 23vw;
+    width: 75vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .improve .improvementContentLeft {
+    width: 39%;
+  }
+  .improve .playerTabImprove {
+    height: 23%;
+    width: 98%;
+  }
+  .improve .improvementContentRight {
+    width: 39%;
+  }
+  .improve .improvementResources {
+    width: 15%;
+  }
+  .improve .writtenImprovementBox {
+    overflow: hidden;
+  }
+  .improve .writtenImprovementDataReference, .improve .writtenImprovementHeading {
+    font-size: 0.8rem;
+  }
+  .improve .writtenImprovementDescription {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    max-width: 94% !important;
+  }
+  .improve .writtenImprovementDescription p {
+    width: 80%;
+  }
+  .improve .resourceCircle, .improve .resourceCircle6 {
+    height: 7rem;
+    width: 7rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .improve {
+    top: 12.5vh;
+    width: 95vw;
+    left: 2vw;
+  }
 }
 /*# sourceMappingURL=Improve.css.map */

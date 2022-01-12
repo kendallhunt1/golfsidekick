@@ -1,8 +1,7 @@
 .dashboard {
   position: absolute;
   left: 15vw;
-  min-width: 83%;
-  max-width: 83%;
+  width: 83%;
   height: 95vh;
   top: 2vh;
 }
@@ -92,14 +91,14 @@
 }
 
 .bigWrapper .dashboardMainContent .dashboardBoxOne .dashboardBoxTop {
-  height: 75%;
+  height: 85%;
   width: 84%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -107,6 +106,7 @@
   font-size: 1.2em;
   font-weight: 600;
   text-align: center;
+  overflow: scroll;
 }
 
 .bigWrapper .dashboardMainContent .dashboardBoxTwo {
@@ -211,5 +211,68 @@
   width: 39%;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 5px 5px;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .dashboard {
+    left: 24vw;
+    width: 75vw;
+  }
+  .dashboardMainContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .dashboardMainContent .dashboardBox {
+    max-height: 45%;
+    min-width: 70%;
+  }
+  .dashboardMainContent .dashboardBox .dashboardBoxTop {
+    font-size: 2vw !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard {
+    top: 12vh;
+    left: 2vw;
+    width: 95vw;
+  }
+  .dashboard .dashboardMainContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .dashboard .dashboardMainContent .dashboardBox {
+    max-height: 45%;
+    min-width: 70%;
+  }
+  .dashboard .dashboardMainContent .dashboardBox .dashboardBoxTop {
+    font-size: 2.7vw !important;
+  }
+  .dashboard .dashboardMainContent .dashboardBoxOne {
+    padding-top: 2%;
+    overflow: scroll;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .dashboardBoxOne {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .dashboardBoxOne .dashboardBoxTop {
+    font-size: 3.3vw !important;
+  }
 }
 /*# sourceMappingURL=Dashboard.css.map */

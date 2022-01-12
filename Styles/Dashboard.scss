@@ -1,8 +1,7 @@
 .dashboard {
     position: absolute;
     left: 15vw;
-    min-width: 83%;
-    max-width: 83%;
+    width: 83%;
     height: 95vh;
     top: 2vh;
 }
@@ -52,15 +51,16 @@
             justify-content: center;
             text-align: center;
             .dashboardBoxTop {
-                height: 75%;
+                height: 85%;
                 width: 84%;
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 justify-content: center;
                 color: white;
                 font-size: 1.2em;
                 font-weight: 600;
                 text-align: center;
+                overflow: scroll;
             }
         }
         .dashboardBoxTwo {
@@ -123,6 +123,57 @@
             width: 39%;
             background: rgba(0,0,0,0.6);
             border-radius: 5px 5px;
+        }
+    }
+}
+
+@media only screen and (max-device-width : 1024px) {
+    .dashboard {
+        left: 24vw;
+        width: 75vw;
+    }
+    .dashboardMainContent {
+        flex-direction: column;
+        justify-content: space-around;
+        .dashboardBox {
+            max-height: 45%;
+            min-width: 70%;
+            .dashboardBoxTop {
+                font-size: 2vw !important;
+                align-items: center !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .dashboard {
+        top: 12vh;
+        left: 2vw;
+        width: 95vw;
+        .dashboardMainContent {
+            flex-direction: column;
+            justify-content: space-around;
+            .dashboardBox {
+                max-height: 45%;
+                min-width: 70%;
+                .dashboardBoxTop {
+                    font-size: 2.7vw !important;
+                }
+            }
+            .dashboardBoxOne {
+                padding-top: 2%;
+                overflow: scroll;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .dashboardBoxOne {
+        align-items: center !important;
+        .dashboardBoxTop {
+            font-size: 3.3vw !important;
         }
     }
 }
